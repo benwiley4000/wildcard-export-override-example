@@ -47,6 +47,8 @@ But wouldn't it be nice if all the icons came from the same place, so all you ha
 
 You think your designers might decide to add even more icon overrides in the future. In order to alleviate the burden of the development team needing to keep track of which icons should be imported from which packages when the designers make updates, you decide to have your downstream package first export the icons from the base library, then the custom icons, so the developers can rely on a single package for icons, which may receive updates in the form of additional releases, without much fanfare.
 
+From an object-oriented standpoint, you can think of your new library as a "derived library" of the base libary, similar to a derived class.
+
 Your new, improved library's entry point looks like this now:
 
 ```js
